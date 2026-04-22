@@ -1,0 +1,20 @@
+@baseUrl = http://localhost:8080
+
+### Get albums
+GET {{baseUrl}}/albums
+Accept: application/json
+
+### Create a new album
+POST {{baseUrl}}/albums
+Content-Type: application/json
+
+{
+    "id": "4",
+    "title": "The modern Sound of Betty Carter",
+    "artist": "Betty Carter",
+    "price": 49.99
+}
+
+### Get album by ID
+GET {{baseUrl}}/albums/2
+Accept: application/json
